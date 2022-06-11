@@ -48,6 +48,8 @@
 
 	<!-- Maheraj Template Color -->
 	<link rel="stylesheet" href="css/color/color1.css">
+	<!-- the line below is needed -->
+	<link href="fcf-assets/css/fcf.default.css" rel="stylesheet">
 
 
 </head>
@@ -73,7 +75,7 @@
 				<div class="col-md-2 col-sm-12 col-xs-12">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">Md Sajidur Rahman</a>
+						<a href="index.html">Sajidur Rahman</a>
 					</div>
 					<!--/ End Logo -->
 					<div class="mobile-nav"></div>
@@ -88,7 +90,6 @@
 									</li>
 									<li><a href="#my-service">My Service</a></li>
 									<li><a href="#portfolio">Portfolio</a></li>
-									<li><a href="#my-timeline">Timeline</a></li>
 									<li><a href="#testimonials">Testimonials</a></li>
 									<li><a href="#blog">Blog</a></li>
 									<li><a href="#contact">Contact</a></li>
@@ -635,107 +636,6 @@
 	<!--/ End portfolio -->
 
 
-	<!-- Start Timeline-->
-	<section id="my-timeline" class="section clearfix">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="section-title">
-						<h1><span>Work & </span>Education<i class="fa fa-history"></i></h1>
-						<p>ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-							classical Latin literature from 45 BC, making it over 2000 years old
-						<p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="timeline">
-						<div class="timeline-inner">
-							<!-- Single Timeline -->
-							<div class="single-main wow fadeInLeft" data-wow-delay="0.4s">
-								<div class="single-timeline">
-									<div class="single-content">
-										<div class="date">
-											<p>Jan<span>10</span></p>
-										</div>
-										<h2>High School Degree</h2>
-										<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam efficitur
-											ultricies elit, eget ullamcorper enim scelerisque sit amet. Pellentesque
-											blandit venenatis rhoncus.
-										<p>
-									</div>
-								</div>
-							</div>
-							<!--/ End Single Timeline -->
-							<!-- Single Timeline -->
-							<div class="single-main wow fadeInRight" data-wow-delay="0.6s">
-								<div class="single-timeline">
-									<div class="single-content">
-										<div class="date">
-											<p>Dec<span>12</span></p>
-										</div>
-										<h2>Start Web Design</h2>
-										<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam efficitur
-											ultricies elit, eget ullamcorper enim scelerisque sit amet. Pellentesque
-											blandit venenatis rhoncus.
-										<p>
-									</div>
-								</div>
-							</div>
-							<!--/ End Single Timeline -->
-							<!-- Single Timeline -->
-							<div class="single-main wow fadeInLeft" data-wow-delay="0.4s">
-								<div class="single-timeline">
-									<div class="single-content">
-										<div class="date">
-											<p>Jan<span>13</span></p>
-										</div>
-										<h2>Join University</h2>
-										<p>Starting College DayInterdum et malesuada fames ac ante ipsum primis in
-											faucibus. Etiam efficitur ultricies elit, eget ullamcorper enim scelerisque
-											sit amet. Pellentesque blandit venenatis rhoncus.</p>
-									</div>
-								</div>
-							</div>
-							<!--/ End Single Timeline -->
-							<!-- Single Timeline -->
-							<div class="single-main wow fadeInRight" data-wow-delay="0.6s">
-								<div class="single-timeline">
-									<div class="single-content">
-										<div class="date">
-											<p>Feb<span>16</span></p>
-										</div>
-										<h2>Start Web Developments</h2>
-										<p>Learn Web Developments Interdum et malesuada fames ac ante ipsum primis in
-											faucibus. Etiam efficitur ultricies elit, eget ullamcorper enim scelerisque
-											sit amet. Pellentesque blandit venenatis rhoncus.</p>
-									</div>
-								</div>
-							</div>
-							<!--/ End Single Timeline -->
-							<!-- Single Timeline -->
-							<div class="single-main wow fadeInLeft" data-wow-delay="0.4s">
-								<div class="single-timeline">
-									<div class="single-content">
-										<div class="date">
-											<p>Jan<span>17</span></p>
-										</div>
-										<h2>Complete Graduations</h2>
-										<p>Just Receive my Interdum et malesuada fames ac ante ipsum primis in faucibus.
-											Etiam efficitur ultricies elit, eget ullamcorper enim scelerisque sit amet.
-											Pellentesque blandit venenatis rhoncus.</p>
-									</div>
-								</div>
-							</div>
-							<!--/ End Single Timeline -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/ End Timeline -->
 
 
 	<!-- Start Testimonials -->
@@ -842,32 +742,47 @@
 			</div>
 			<div class="row">
 				<!-- Contact Form -->
-				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.4s">
-					<form class="form" method="post" action="mail/mail.php">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" name="name" placeholder="Full Name" required="required">
+				<!-- the lines below are needed -->
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" style="max-width:500px;padding:30px">
+					<div id="fcf-form">
+						<form class="fcf-form-class" id="freeversion" method="post" action="fcf-assets/fcf.process.php">
+
+							<div class="field">
+								<label for="Name" class="label has-text-weight-normal">Your name</label>
+								<div class="control">
+									<input type="text" name="Name" id="Name" class="input is-full-width" maxlength="100"
+										data-validate-field="Name">
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="email" name="email" placeholder="Your Email" required="required">
+							<div class="field">
+								<label for="Email" class="label has-text-weight-normal">Your email address</label>
+								<div class="control">
+									<input type="email" name="Email" id="Email" class="input is-full-width"
+										maxlength="100" data-validate-field="Email">
 								</div>
 							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<textarea name="message" rows="6" placeholder="Type Your Message Here"></textarea>
+							<div class="field">
+								<label for="Message" class="label has-text-weight-normal">Your message</label>
+								<div class="control">
+									<textarea name="Message" id="Message" class="textarea" maxlength="3000" rows="5"
+										data-validate-field="Message"></textarea>
 								</div>
 							</div>
-							<div class="col-md-12">
-								<div class="form-group button">
-									<button type="submit" class="button primary"><i
-											class="fa fa-send"></i>Submit</button>
+							<div id="fcf-status" class="fcf-status"></div>
+							<div class="field">
+								<div class="buttons">
+									<button id="fcf-button" type="submit" class="button is-link is-medium">Send
+										Message</button>
 								</div>
 							</div>
-						</div>
-					</form>
+						</form>
+					</div>
+					<div id="fcf-thank-you" style="display:none">
+						<!-- Thank you message goes below -->
+						<strong>Thank you</strong>
+						<p>Thanks for contacting us, we will get back in touch with you soon.</p>
+						<!-- Thank you message goes above -->
+					</div>
 				</div>
 				<!--/ End Contact Form -->
 				<!-- Contact Address -->
@@ -908,71 +823,9 @@
 	</section>
 	<!--/ End Contact -->
 
-	<!-- Start Clients -->
-	<div id="clients" class="section" data-stellar-background-ratio="0.3">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="clients-slider">
-						<!-- Single Clients -->
-						<div class="single-clients">
-							<a href="#" target="_blank"><img src="images/clients-1.png" alt="#"></a>
-						</div>
-						<!--/ End Single Clients -->
-						<!-- Single Clients -->
-						<div class="single-clients active">
-							<a href="#" target="_blank"><img src="images/clients-2.png" alt="#"></a>
-						</div>
-						<!--/ End Single Clients -->
-						<!-- Single Clients -->
-						<div class="single-clients">
-							<a href="#" target="_blank"><img src="images/clients-3.png" alt="#"></a>
-						</div>
-						<!--/ End Single Clients -->
-						<!-- Single Clients -->
-						<div class="single-clients">
-							<a href="#" target="_blank"><img src="images/clients-4.png" alt="#"></a>
-						</div>
-						<!--/ End Single Clients -->
-						<!-- Single Clients -->
-						<div class="single-clients">
-							<a href="#" target="_blank"><img src="images/clients-5.png" alt="#"></a>
-						</div>
-						<!--/ End Single Clients -->
-						<!-- Single Clients -->
-						<div class="single-clients">
-							<a href="#" target="_blank"><img src="images/clients-6.png" alt="#"></a>
-						</div>
-						<!--/ End Single Clients -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--/ End Clients -->
 
-	<!-- Footer Top -->
-	<section id="footer-top" class="section">
-		<div class="container">
-			<div class="row">
-				<!-- Single Widget -->
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="newslatter">
-						<h2><span>Signup</span>Newslatter</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio tenetur, dolores
-							aperiam, quasi perferendis nemo mollitia labore molestias modi consequatur expedita ad
-							voluptates dolor ex. Impedit quo temporibus, molestiae fugit?</p>
-					</div>
-					<form class="news-form">
-						<input type="email" placeholder="type your email">
-						<button type="submit" class="button primary"><i class="fa fa-paper-plane"></i></button>
-					</form>
-				</div>
-				<!--/ End Single Widget -->
-			</div>
-		</div>
-	</section>
-	<!--/ End footer Top -->
+
+
 
 	<!-- Start Footer -->
 	<footer id="footer">
@@ -1054,6 +907,10 @@
 
 	<!-- Main JS -->
 	<script type="text/javascript" src="js/main.js"></script>
+
+	<script src="fcf-assets/js/fcf.just-validate.min.js"></script>
+	<script src="fcf-assets/js/fcf.form.js"></script>
+	<!-- the lines above are needed -->
 </body>
 
 </html>
